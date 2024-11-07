@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- KPI Card Row -->
+        <div class="kpi-row">
+            <div class="kpi-card">Total Accounts: <span id="totalAccounts">35</span></div>
+            <div class="kpi-card">Approved Accounts: <span id="approvedAccounts">6</span></div>
+            <div class="kpi-card">Pending Accounts: <span id="pendingAccounts">23</span></div>
+            <div class="kpi-card">Closed Accounts: <span id="closedAccounts">0</span></div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="chart-section">
+            <canvas id="requestStatusChart"></canvas>
+            <canvas id="fmlaApprovalChart"></canvas>
+            <canvas id="approvalByLocationChart"></canvas>
+        </div>
+
+        <!-- Interactive Section -->
+        <div class="interactive-section">
+            <label for="ukgNumberInput">Enter UKG Number:</label>
+            <input type="text" id="ukgNumberInput" placeholder="Enter UKG Number">
+            <button onclick="lookupEmployee()">Lookup</button>
+            <div id="employeeInfo">
+                <!-- Employee info will be populated here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

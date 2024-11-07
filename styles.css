@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    width: 90%;
+    margin: auto;
+}
+
+.kpi-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.kpi-card {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+}
+
+.chart-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.chart-section canvas {
+    width: 300px;
+    height: 300px;
+}
+
+.interactive-section {
+    margin: 20px 0;
+    text-align: center;
+}
